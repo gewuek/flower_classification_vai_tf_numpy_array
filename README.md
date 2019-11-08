@@ -19,3 +19,5 @@ https://www.xilinx.com/support/documentation/sw_manuals/ai_inference/v1_6/ug1327
 https://github.com/Xilinx/Edge-AI-Platform-Tutorials/tree/3.1/docs/DPU-Integration
 
 https://stackoverflow.com/questions/45466020/how-to-export-keras-h5-to-tensorflow-pb
+
+https://stackoverflow.com/questions/51278213/what-is-the-use-of-a-pb-file-in-tensorflow-and-how-does-it-work/51281809#51281809
