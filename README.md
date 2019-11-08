@@ -7,9 +7,15 @@ To make it easier I just make my model ovefit the dataset
 # Reference
 
 https://www.youtube.com/watch?v=VwVg9jCtqaU&t=112s
+
 https://www.kaggle.com/alxmamaev/flowers-recognition
+
 https://www.youtube.com/watch?v=j-3vuBynnOE
+
 https://github.com/tensorflow/docs/blob/r1.12/site/en/tutorials/load_data/images.ipynb
+
 https://www.xilinx.com/support/documentation/sw_manuals/ai_inference/v1_6/ug1327-dnndk-user-guide.pdf
+
 https://github.com/Xilinx/Edge-AI-Platform-Tutorials/tree/3.1/docs/DPU-Integration
+
 https://stackoverflow.com/questions/45466020/how-to-export-keras-h5-to-tensorflow-pb
