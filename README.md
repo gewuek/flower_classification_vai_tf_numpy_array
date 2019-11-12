@@ -4,7 +4,7 @@ This is a simple example about how to train a ConNet model from labeled dataset 
 The whole design is trained and deployed using Ubuntu 18.04 + TensorFlow 1.12 + DNNDK 3.1 + PetaLinux 2019.1
 To make it easier I just make my model ovefit the dataset. All the training/validation/calibration data are just from the same dataset.
 
-## TensorFlow Training and DNNDK Quantization Flow
+### TensorFlow Training and DNNDK Quantization Flow
 Please install the DNNDK 3.1 develop environment according to https://www.xilinx.com/support/documentation/sw_manuals/ai_inference/v1_6/ug1327-dnndk-user-guide.pdf before starting the custom model flow.
 Make sure you can run DNNDK examples.
 
@@ -30,7 +30,7 @@ Make sure you can run DNNDK examples.
 ```./dnnc.sh``` <br />
 12. Now you should get the ELF file at ```flower_classification_v1/x86/flower_classification/dpu_flower_classification_0.elf``` <br />
 
-# Reference
+### Reference
 
 https://www.youtube.com/watch?v=VwVg9jCtqaU&t=112s
 
