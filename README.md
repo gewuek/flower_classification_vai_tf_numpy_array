@@ -4,7 +4,7 @@ This is a simple example about how to train a ConNet model from labeled dataset 
 The whole design is trained and deployed using Ubuntu 18.04 + TensorFlow 1.12 + DNNDK 3.1 + PetaLinux 2019.1
 To make it easier I just make my model ovefit the dataset. All the training/validation/calibration data are just from the same dataset.
 
-# Training and DNNDK tools Test flow
+## Training and DNNDK tools Test flow
 Please install the DNNDK 3.1 develop environment according to https://www.xilinx.com/support/documentation/sw_manuals/ai_inference/v1_6/ug1327-dnndk-user-guide.pdf before starting the custom model flow.
 Make sure you can run DNNDK examples.
 
