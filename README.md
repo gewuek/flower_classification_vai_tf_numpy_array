@@ -22,11 +22,11 @@ Make sure you can run DNNDK examples.
 ```python3 ./freeze_model.py``` <br />
 8. Evaluate the frozen model(Opitional) <br />
 ```python3 ./evaluate_frozen_model.py``` <br />
-9. Quantize the graph, using chmod u+x ./decent_q.sh if necessary <br />
+9. Quantize the graph, using ```chmod u+x ./decent_q.sh``` if necessary <br />
 ```./decent_q.sh``` <br />
 10. Evaluate quantized graph (Optional) <br />
 ```python3 ./evaluate_quantized_graph.py``` <br />
-11. Compile the quantized model into elf using DNNC, use chmod u+x ./dnnc.sh if necessary <br />
+11. Compile the quantized model into elf using DNNC, use ```chmod u+x ./dnnc.sh``` if necessary <br />
 ```./dnnc.sh``` <br />
 
 
