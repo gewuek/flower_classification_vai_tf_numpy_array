@@ -13,21 +13,21 @@ Make sure you can run DNNDK examples.
 
 3. Navigate into the flower_classification_dnndk_v1/x86/ folder <br />
 4. Load images and labels into dataset <br />
-python3 ./load_data.py <br />
+```python3 ./load_data.py``` <br />
 5. Train data <br />
-python3 ./train_data.py <br />
+```python3 ./train_data.py``` <br />
 6. Evaluate the trained model(Opitional) <br />
-python3 ./evaluate_trained_model.py <br />
+```python3 ./evaluate_trained_model.py``` <br />
 7. Freeze the model <br />
-python3 ./freeze_model.py <br />
+```python3 ./freeze_model.py``` <br />
 8. Evaluate the frozen model(Opitional) <br />
-python3 ./evaluate_frozen_model.py <br />
+```python3 ./evaluate_frozen_model.py``` <br />
 9. Quantize the graph, using chmod u+x ./decent_q.sh if necessary <br />
-./decent_q.sh <br />
-10. Evaluate quantized graph <br />
-python3 ./evaluate_quantized_graph.py (Optional) <br />
+```./decent_q.sh``` <br />
+10. Evaluate quantized graph (Optional) <br />
+```python3 ./evaluate_quantized_graph.py``` <br />
 11. Compile the quantized model into elf using DNNC, use chmod u+x ./dnnc.sh if necessary <br />
-./dnnc.sh <br />
+```./dnnc.sh``` <br />
 
 
 # Reference
