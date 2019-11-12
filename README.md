@@ -4,6 +4,10 @@ This is a simple example about how to train a ConNet model from labeled dataset 
 The whole design is trained and deployed using Ubuntu 18.04 + TensorFlow 1.12 + DNNDK 3.1 + PetaLinux 2019.1
 To make it easier I just make my model ovefit the dataset. All the training/validation/calibration data are just from the same dataset.
 
+To be notices: Although we use Xilinx tools to deploy design on Xilinx developboard this is just personal release. No gurantee can be made here. :-) Pease feel free to contact me or post your questions on:  <br />
+https://forums.xilinx.com/t5/Machine-Learning/bd-p/Deephi <br />
+
+
 ### TensorFlow Training and DNNDK Quantization Flow
 Please install the DNNDK 3.1 develop environment according to https://www.xilinx.com/support/documentation/sw_manuals/ai_inference/v1_6/ug1327-dnndk-user-guide.pdf before starting the custom model flow.
 Make sure you can run DNNDK examples.
