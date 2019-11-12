@@ -28,7 +28,7 @@ Make sure you can run DNNDK examples.
 ```python3 ./evaluate_quantized_graph.py``` <br />
 11. Compile the quantized model into elf using DNNC, use ```chmod u+x ./dnnc.sh``` if necessary <br />
 ```./dnnc.sh``` <br />
-
+12. Now you should get the ELF file at ```flower_classification_v1/x86/flower_classification/dpu_flower_classification_0.elf``` <br />
 
 # Reference
 
