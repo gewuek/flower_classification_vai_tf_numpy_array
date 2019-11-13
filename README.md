@@ -1,12 +1,12 @@
 # flower_classification_dnndk_v1
-This is a simple example about how to train a ConNet model from labeled dataset with TensorFlow and then use DNNDK tools to deploy the model into ZCU102 board. <br />
-To make the flow more fluent I just use the numpy array as data input and OpenCV functions to open images during model training. I would try to create a new repository to deliver an example using tf.data.Dataset later.
-The dataset is downloaded from: https://www.kaggle.com/alxmamaev/flowers-recognition
-And although you may find the dataset from Keras tutorial: https://www.kaggle.com/alxmamaev/flowers-recognition
-The ARM deploy code is modified from the DNNDK resnet50 example code.
+This is a simple example about how to train a ConNet model from labeled dataset with TensorFlow and then use DNNDK tools to deploy the model into ZCU102 board. <br /><br />
+To make the flow more fluent I just use the numpy array as data input and OpenCV functions to open images during model training. I would try to create a new repository to deliver an example using tf.data.Dataset later.<br />
+The dataset is downloaded from: https://www.kaggle.com/alxmamaev/flowers-recognition <br />
+And you may find the dataset from Keras tutorial: https://www.kaggle.com/alxmamaev/flowers-recognition <br />
+The ARM deploy code is modified from the DNNDK resnet50 example code. <br />
 
-The whole design is trained and deployed using Ubuntu 18.04 + TensorFlow 1.12 + DNNDK 3.1 + PetaLinux 2019.1
-To make it easier I just make my model ovefit the dataset. All the training/validation/calibration data are just from the same dataset.
+The whole design is trained and deployed using Ubuntu 18.04 + TensorFlow 1.12 + DNNDK 3.1 + PetaLinux 2019.1. <br />
+To make it easier I just make my model ovefit the dataset. All the training/validation/calibration data are just from the same dataset. <br /> <br />
 
 ***To be notices:*** Although this design uses Xilinx tools to deploy design on Xilinx developboard this is just personal release. No gurantee can be made here. :-) Pease feel free to contact me or post your questions on:  <br />
 https://forums.xilinx.com/t5/Machine-Learning/bd-p/Deephi <br />
