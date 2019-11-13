@@ -19,6 +19,7 @@ Make sure you can run DNNDK examples.
 1. Download kaggle flower dataset from https://www.kaggle.com/alxmamaev/flowers-recognition <br />
 2. unzip the folder and copy the files into ```flower_classification_dnndk_v1/x86/flowers``` folder. So that the directory would like below: <br />
 
+
 3. Navigate into the ```flower_classification_dnndk_v1/x86/``` folder <br />
 4. Load images and labels into dataset <br />
 ```python3 ./load_data.py``` <br />
