@@ -50,6 +50,7 @@ a) If you are using [prebuild DPU TRD image](https://www.xilinx.com/member/forms
 b) If you work with [DPU Intergration flow](https://github.com/Xilinx/Edge-AI-Platform-Tutorials/tree/master/docs/DPU-Integration). Then I would suggest you to use the SDK cross compile flow mentioned in that webpage and copy the compiled ELF into ```flower_classification``` and run the ELF directly. <br />
 
 The running result on ZCU102 would like below:
+![classification_flower.PNG](/pic_for_readme/classification_flower.PNG)
 
 ### Reference
 
