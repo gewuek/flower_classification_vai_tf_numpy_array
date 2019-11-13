@@ -39,11 +39,11 @@ Make sure you can run DNNDK examples.
 
 ### Test on ZCU102 board
 For build and deploy the example on ZCU102 board, there are two additional requirement
-1. DNNDK libs
+1. DNNDK libs <br />
 If you are using the [DPU Intergration flow](https://github.com/Xilinx/Edge-AI-Platform-Tutorials/tree/master/docs/DPU-Integration) after you enable the dnndk user package in PetaLinux the libs would be automatically installed into the rootfs.
 Otherwise you can try to install the libs according to [DNNDK user guide](https://www.xilinx.com/support/documentation/sw_manuals/ai_inference/v1_6/ug1327-dnndk-user-guide.pdf) page.21 ~ page.22
 
-2. compiling environment
+2. compiling environment <br />
 If you are using [prebuild DPU TRD image](https://www.xilinx.com/member/forms/download/zcu102-image-license-xef.html?filename=petalinux-user-image-zcu102-zynqmp-sd-20190802.img.gz) the compiling environment is preinstalled at the image. So you just need to copy the ```flower_classification_v1/arm/flower_classification``` folder into the ZCU102 board(SD card or DDR) and when the board boot up go to the flower_classification folder and run make to compile the application.
 If you work with [DPU Intergration flow](https://github.com/Xilinx/Edge-AI-Platform-Tutorials/tree/master/docs/DPU-Integration). Then I would suggest you to use the SDK cross compile flow mentioned in that webpage and copy the compiled ELF into ```flower_classification``` and run the ELF directly.
 
