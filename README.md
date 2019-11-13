@@ -1,5 +1,8 @@
 # flower_classification_dnndk_v1
 This is a simple example about how to train a ConNet model from labeled dataset with TensorFlow and then use DNNDK tools to deploy the model into ZCU102 board.
+The dataset is downloaded from: https://www.kaggle.com/alxmamaev/flowers-recognition
+And although you may find the dataset from Keras tutorial: https://www.kaggle.com/alxmamaev/flowers-recognition
+The ARM deploy code is modified from the DNNDK resnet50 example code.
 
 The whole design is trained and deployed using Ubuntu 18.04 + TensorFlow 1.12 + DNNDK 3.1 + PetaLinux 2019.1
 To make it easier I just make my model ovefit the dataset. All the training/validation/calibration data are just from the same dataset.
@@ -32,7 +35,19 @@ Make sure you can run DNNDK examples.
 ```python3 ./evaluate_quantized_graph.py``` <br />
 11. Compile the quantized model into elf using DNNC, use ```chmod u+x ./dnnc.sh``` if necessary <br />
 ```./dnnc.sh``` <br />
-12. Now you should get the ELF file at ```flower_classification_v1/x86/flower_classification/dpu_flower_classification_0.elf``` <br />
+12. Now you should get the ELF file at ```flower_classification_v1/x86/flower_classification/dpu_flower_classification_0.elf```. Copy the file into the ```flower_classification_v1/arm/flower_classification/model``` for further usage <br />
+
+### Test on ZCU102 board
+For build and deploy the example on ZCU102 board, there are two additional requirement
+1. DNNDK libs
+If you are using the [DPU Intergration flow](https://github.com/Xilinx/Edge-AI-Platform-Tutorials/tree/master/docs/DPU-Integration) after you enable the dnndk user package in PetaLinux the libs would be automatically installed into the rootfs.
+Otherwise you can try to install the libs according to [DNNDK user guide](https://www.xilinx.com/support/documentation/sw_manuals/ai_inference/v1_6/ug1327-dnndk-user-guide.pdf) page.21 ~ page.22
+
+2. compiling environment
+If you are using [prebuild DPU TRD image](https://www.xilinx.com/member/forms/download/zcu102-image-license-xef.html?filename=petalinux-user-image-zcu102-zynqmp-sd-20190802.img.gz) the compiling environment is preinstalled at the image. So you just need to copy the ```flower_classification_v1/arm/flower_classification``` folder into the ZCU102 board(SD card or DDR) and when the board boot up go to the flower_classification folder and run make to compile the application.
+If you work with [DPU Intergration flow](https://github.com/Xilinx/Edge-AI-Platform-Tutorials/tree/master/docs/DPU-Integration). Then I would suggest you to use the SDK cross compile flow mentioned in that webpage and copy the compiled ELF into ```flower_classification``` and run the ELF directly.
+
+The result on ZCU102 would like below:
 
 ### Reference
 
