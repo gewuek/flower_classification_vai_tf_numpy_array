@@ -1,10 +1,10 @@
-# Version </ br>
-***OS:*** Ubuntu 18.04.2 LTS
-***Vivado:*** 2019.1
-***PetaLinux:*** 2019.1
-***DNNDK:*** 3.1
+# Version <br /> <br />
+***OS:*** Ubuntu 18.04.2 LTS <br /> <br />
+***Vivado:*** 2019.1 <br /> <br />
+***PetaLinux:*** 2019.1 <br /> <br />
+***DNNDK:*** 3.1 <br /> <br />
 
-***pip list*:
+***pip list*: <br />
 Package             Version  
 ------------------- ---------
 absl-py             0.7.1    
