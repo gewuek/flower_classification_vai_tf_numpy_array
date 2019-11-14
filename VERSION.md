@@ -4,7 +4,7 @@
 ***PetaLinux:*** 2019.1 <br /> <br />
 ***DNNDK:*** 3.1 <br /> <br />
 
-***pip list*: <br />
+***pip list***: <br />
 Package             Version  
 ------------------- ---------
 absl-py             0.7.1    
