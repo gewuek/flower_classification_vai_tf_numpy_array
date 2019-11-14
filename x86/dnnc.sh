@@ -1,7 +1,9 @@
 #!/bin/bash
 
 # top.hwh is from ZCU102 DPU TRD
-dcf_file_name=$(dlet -f top.hwh | grep -o *.dcf)
+dlet -f top.hwh
+
+dcf_file_name=$(find -name *.dcf)
 
 # DNNC command to compile pb file into elf file
 dnnc --parser=tensorflow \
