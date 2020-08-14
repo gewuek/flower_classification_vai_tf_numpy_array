@@ -23,7 +23,7 @@ Make sure you can run Vitis AI DNNDK examples.<br />
 2. Download kaggle flower dataset from https://www.kaggle.com/alxmamaev/flowers-recognition <br />
 3. unzip the folder and copy the files into ```flower_classification_dnndk_v1/x86/flowers``` folder. So that the directory would like below: <br />
 ![directory.PNG](/pic_for_readme/directory.PNG) <br />
-4. Launch the docker, call ```conda activate vitis-ai-tensorflow``` to set the TensorFlow environment  and navigate into the ```flower_classification_dnndk_v1/x86/``` folder <br />
+4. Launch the docker, call ```conda activate vitis-ai-tensorflow``` to set the TensorFlow environment  and then navigate into the ```flower_classification_dnndk_v1/x86/``` folder <br />
 5. Load images and labels into dataset <br />
 ```python3 ./load_data.py``` <br />
 6. Train data <br />
