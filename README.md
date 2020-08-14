@@ -1,3 +1,5 @@
+Updating to Vitis AI 1.2
+
 # flower_classification_dnndk_v1
 This is a simple example about how to train a ConNet model from labeled dataset with TensorFlow and then use DNNDK tools to deploy the model into ZCU102 board. <br /><br />
 To make it easier I just make my model ovefit the dataset. All the training/validation/calibration data are just from the same dataset. <br /> 
@@ -6,7 +8,7 @@ The dataset is downloaded from: https://www.kaggle.com/alxmamaev/flowers-recogni
 And you may find the dataset from Keras tutorial: https://www.kaggle.com/alxmamaev/flowers-recognition <br />
 The ARM deploy code is modified from the DNNDK resnet50 example code. <br />
 
-The whole design is trained and deployed using Ubuntu 18.04 + TensorFlow 1.12 + DNNDK 3.1 + PetaLinux 2019.1. <br />
+The whole design is trained and deployed using Ubuntu 18.04 + Vitis AI 1.2 + TensorFlow 1.15 + PetaLinux 2020.1. <br />
 <br />
 
 ***To be notices:*** Although this design uses Xilinx tools to deploy design on Xilinx developboard this is just personal release. No gurantee can be made here. :-) Pease feel free to contact me or post your questions on:  <br />
@@ -14,8 +16,8 @@ https://forums.xilinx.com/t5/Machine-Learning/bd-p/Deephi <br />
 
 
 ### TensorFlow Training and DNNDK Quantization Flow
-Please install the DNNDK 3.1 develop environment according to https://www.xilinx.com/support/documentation/sw_manuals/ai_inference/v1_6/ug1327-dnndk-user-guide.pdf before starting the custom model flow.
-Make sure you can run DNNDK examples.
+Please install the Vitis AI 1.2 according to https://github.com/Xilinx/Vitis-AI/ before starting the custom model flow.
+Make sure you can run Vitis AI DNNDK examples.
 
 1. Download kaggle flower dataset from https://www.kaggle.com/alxmamaev/flowers-recognition <br />
 2. unzip the folder and copy the files into ```flower_classification_dnndk_v1/x86/flowers``` folder. So that the directory would like below: <br />
