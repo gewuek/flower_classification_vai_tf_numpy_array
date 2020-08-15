@@ -49,7 +49,7 @@ c) I was told that the Vitis AI Libs are optional if you are using pure DNNDK li
 <br />
 2. Compile Environment <br />
 a) If you are using [zcu102_vai_1.2 image](https://www.xilinx.com/bin/public/openDownload?filename=xilinx-zcu102-dpu-v2020.1-v1.2.0.img.gz) the compiling environment is preinstalled at the image. So you just need to copy the ```flower_classification_v1/arm/flower_classification``` folder into the ZCU102 board(SD card or DDR) and when the board boot up go to the flower_classification folder and run ***make*** to compile the application. <br /><br />
-b) For custom platform please refer to the configuration from[Vitis AI custom platform creation flow](https://github.com/gewuek/vitis_ai_custom_platform_flow). If it is not up-to-date please try with this [VAI 1.2 tmp rep](https://github.com/gewuek/vitis_ai_custom_platform_v1.2_tmp) to configure the rootfs. Both the Vitis AI GUI compilation and on board compilation should work. <br />
+b) For custom platform please refer to the configuration from [Vitis AI custom platform creation flow](https://github.com/gewuek/vitis_ai_custom_platform_flow). If it is not up-to-date please try with this [VAI 1.2 tmp rep](https://github.com/gewuek/vitis_ai_custom_platform_v1.2_tmp) to configure the rootfs. Both the Vitis AI GUI compilation and on board compilation should work. <br />
 
 The running result on ZCU102 would like below:
 ![classification_flower.PNG](/pic_for_readme/classification_flower.PNG)
