@@ -3,7 +3,7 @@
 INPUT_NODE=$(sed '1q;d' ./freeze_input_output_node_name.txt)
 OUTPUT_NODE=$(sed '2q;d' ./freeze_input_output_node_name.txt)
 
-decent_q quantize \
+vai_q_tensorflow quantize \
     --input_frozen_graph ./frozen_graph.pb \
     --input_nodes $INPUT_NODE \
     --input_shapes ?,128,128,3 \

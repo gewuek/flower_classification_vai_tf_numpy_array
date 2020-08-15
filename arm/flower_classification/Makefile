@@ -53,7 +53,7 @@ OBJ       :=   main.o
 LDFLAGS   =   $(shell pkg-config --libs opencv)
 
 # linking libraries of DNNDK
-LDFLAGS   +=  -lhineon -ln2cube -ldputils
+LDFLAGS   +=  -lhineon -ln2cube
 
 CUR_DIR =   $(shell pwd)
 SRC     =   $(CUR_DIR)/src

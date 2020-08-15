@@ -1,19 +1,15 @@
 #!/bin/bash
 
-# top.hwh is from ZCU102 DPU TRD
-dlet -f top.hwh
-
-dcf_file_name=$(find -name *.dcf)
+TARGET=ZCU102
+NET_NAME=flower_classification
+ARCH=${CONDA_PREFIX}/arch/dpuv2/${TARGET}/${TARGET}.json
 
 # DNNC command to compile pb file into elf file
-dnnc --parser=tensorflow \
-    --frozen_pb=quantize_results/deploy_model.pb \
-    --dcf=$dcf_file_name \
-    --cpu_arch=arm64 \
-    --output_dir=flower_classification \
-    --save_kernel \
-    --mode normal \
-    --net_name=flower_classification
+vai_c_tensorflow \
+    --frozen_pb quantize_results/deploy_model.pb \
+    --arch ${ARCH} \
+    --output_dir flower_classification \
+    --net_name ${NET_NAME} \
+    --options "{'save_kernel':''}"
 
-# remove the .dcf file
-rm $dcf_file_name
+
