@@ -1,7 +1,7 @@
 Updating to Vitis AI 1.2
 
 # flower_classification_dnndk_v1
-This is a simple example about how to train a ConNet model from labeled dataset with TensorFlow and then use DNNDK tools to deploy the model into ZCU102 board. <br /><br />
+This is a simple example about how to train a ConNet model from labeled dataset with TensorFlow and then use Vitis AI 1.2 tools to deploy the model into ZCU102 board. <br /><br />
 To make it easier I just make my model ovefit the dataset. All the training/validation/calibration data are just from the same dataset. <br /> 
 And I just use the numpy array as data input and OpenCV functions to open images during model training. Please find project using tf.data.Dataset here: [flower_classification_dnndk_v2](https://github.com/gewuek/flower_classification_dnndk_v2).<br />
 The dataset is downloaded from: https://www.kaggle.com/alxmamaev/flowers-recognition <br />
