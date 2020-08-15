@@ -17,11 +17,11 @@ https://forums.xilinx.com/t5/Machine-Learning/bd-p/Deephi <br />
 Please install the Vitis AI 1.2 according to https://github.com/Xilinx/Vitis-AI/ before starting the custom model flow.<br />
 Make sure you can run Vitis AI DNNDK examples.<br />
 
-1. git clone the repository inside the Vitis-AI folder so that when launching the docker you can see the ***flower_classification_dnndk_v1*** folder inside the docker workspace.<br />
+1. git clone the repository inside the Vitis-AI folder so that when launching the docker you can see the ***flower_classification_vai_tf_numpy_array*** folder inside the docker workspace.<br />
 2. Download kaggle flower dataset from https://www.kaggle.com/alxmamaev/flowers-recognition <br />
-3. unzip the folder and copy the files into ```flower_classification_dnndk_v1/x86/flowers``` folder. So that the directory would like below: <br />
+3. unzip the folder and copy the files into ```flower_classification_vai_tf_numpy_array/x86/flowers``` folder. So that the directory would like below: <br />
 ![directory.PNG](/pic_for_readme/directory.PNG) <br />
-4. Launch the docker, call ```conda activate vitis-ai-tensorflow``` to set the TensorFlow environment  and then navigate into the ```flower_classification_dnndk_v1/x86/``` folder <br />
+4. Launch the docker, call ```conda activate vitis-ai-tensorflow``` to set the TensorFlow environment  and then navigate into the ```flower_classification_vai_tf_numpy_array/x86/``` folder <br />
 5. Load images and labels into dataset <br />
 ```python3 ./load_data.py``` <br />
 6. Train data <br />
@@ -38,7 +38,7 @@ Make sure you can run Vitis AI DNNDK examples.<br />
 ```python3 ./evaluate_quantized_graph.py``` <br />
 12. Compile the quantized model into elf using DNNC, use ```chmod u+x ./dnnc.sh``` if necessary <br />
 ```./dnnc.sh``` <br />
-13. Now you should get the ELF file at ```flower_classification_v1/x86/flower_classification/dpu_flower_classification_0.elf```. Copy the file into the ```flower_classification_v1/arm/flower_classification/model``` for further usage <br />
+13. Now you should get the ELF file at ```flower_classification_vai_tf_numpy_array/x86/flower_classification/dpu_flower_classification_0.elf```. Copy the file into the ```flower_classification_vai_tf_numpy_array/arm/flower_classification/model``` for further usage <br />
 
 ### Test on ZCU102 board
 For build and deploy the example on ZCU102 board, there are two additional requirement <br />
@@ -48,7 +48,7 @@ For build and deploy the example on ZCU102 board, there are two additional requi
   c) I was told that the Vitis AI Libs are optional if you are using pure DNNDK libs, but don't have time to have a try.<br /><br />
 
 2. Compile Environment <br />
-  a) If you are using [ZCU102 VAI 1.2 release image](https://www.xilinx.com/bin/public/openDownload?filename=xilinx-zcu102-dpu-v2020.1-v1.2.0.img.gz) the compiling environment is preinstalled at the image. So you just need to copy the ***flower_classification_v1/arm/flower_classification*** folder into the ZCU102 board(SD card or DDR) and when the board boot up go to the flower_classification folder and run ***make*** to compile the application. <br /><br />
+  a) If you are using [ZCU102 VAI 1.2 release image](https://www.xilinx.com/bin/public/openDownload?filename=xilinx-zcu102-dpu-v2020.1-v1.2.0.img.gz) the compiling environment is preinstalled at the image. So you just need to copy the ***flower_classification_vai_tf_numpy_array/arm/flower_classification*** folder into the ZCU102 board(SD card or DDR) and when the board boot up go to the flower_classification folder and run ***make*** to compile the application. <br /><br />
   b) For custom platform please refer to the configuration from [Vitis AI custom platform creation flow](https://github.com/gewuek/vitis_ai_custom_platform_flow). If it is not up-to-date please try with this [VAI 1.2 tmp rep](https://github.com/gewuek/vitis_ai_custom_platform_v1.2_tmp) to configure the rootfs. Both the Vitis AI GUI compilation and on board compilation should work. <br />
 
 The running result on ZCU102 would like below:
