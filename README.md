@@ -15,7 +15,7 @@ The whole design is trained and deployed using Ubuntu 18.04 + Vitis AI 1.2 + Ten
 https://forums.xilinx.com/t5/Machine-Learning/bd-p/Deephi <br />
 
 
-### TensorFlow Training and DNNDK Quantization Flow<br />
+### TensorFlow Training and Vitis AI Quantization Flow<br />
 Please install the Vitis AI 1.2 according to https://github.com/Xilinx/Vitis-AI/ before starting the custom model flow.<br />
 Make sure you can run Vitis AI DNNDK examples.<br />
 
