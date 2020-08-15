@@ -1,5 +1,3 @@
-Updating to Vitis AI 1.2
-
 # flower_classification_vai_tf_numpy_array
 This is a simple example about how to train a ConNet model from labeled dataset with TensorFlow and then use Vitis AI 1.2 tools to deploy the model into ZCU102 board. <br /><br />
 To make it easier I just make my model ovefit the dataset. All the training/validation/calibration data are just from the same dataset. <br /> 
